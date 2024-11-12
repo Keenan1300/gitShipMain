@@ -151,19 +151,6 @@ void dropOutOfWarp(){
   location = "sector " + int(x) + "-" + int(y);
 }
 
-/////////////////////////////////////////////////////
-///////////engineering working party/////////////////
-/////////////////////////////////////////////////////
-void beginDrift(){
-  drift += 0.01;
-  pushMatrix();
-  translate(width/2, height/2);
-  rotate(drift);
-}
-
-void endDrift(){
-  popMatrix();
-}
 
 void DeregulateDilithuimColumator(){
   char[] bin = binary(healthbar.checksum).toCharArray();
