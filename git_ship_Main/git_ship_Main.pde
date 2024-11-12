@@ -78,7 +78,7 @@ void draw(){
   
   if(viewscreen) {
     //begin attitude control
-    if(!attitudeControl) beginDrift();
+
     
     //starfield simulation
     for(int i = 0; i < stars. length; i++){
@@ -97,7 +97,7 @@ void draw(){
     holodeck.display();
   
     //end of attitude control
-    if(!attitudeControl) endDrift();
+
   }
   else {
     noSignal();
